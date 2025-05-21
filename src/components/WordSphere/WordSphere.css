@@ -1,0 +1,19 @@
+.canvas-container {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  width: 100vw !important;
+  height: 100vh !important;
+  transition: transform 0.8s cubic-bezier(0.77,0,0.175,1), opacity 0.8s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  pointer-events: auto;
+}
+
+.move-to-corner {
+  transform: scale(0.35) translate(-60vw, -40vh);
+  opacity: 0.85;
+  pointer-events: none;
+} 
