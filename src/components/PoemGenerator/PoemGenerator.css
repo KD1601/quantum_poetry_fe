@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap');
+
+.poem-container {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: rgba(10, 10, 30, 0.85);
+  padding: 28px 32px;
+  border-radius: 18px;
+  max-width: 380px;
+  color: #fff;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+  z-index: 1000;
+  transition: all 0.3s;
+  backdrop-filter: blur(8px);
+  border: 1.5px solid rgba(255,255,255,0.08);
+}
+
+.poem-content {
+  font-family: 'Noto Serif', 'Times New Roman', Times, serif;
+  text-align: center;
+  line-height: 2.1;
+  letter-spacing: 0.01em;
+  font-size: 1.25rem;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.25), 0 1px 0 #fff2;
+  background: rgba(255,255,255,0.04);
+  border-radius: 12px;
+  margin-bottom: 22px;
+  padding: 18px 10px 12px 10px;
+  box-shadow: 0 2px 12px 0 rgba(0,0,0,0.10);
+  border: 1px solid rgba(255,255,255,0.10);
+}
+
+.poem-content:last-child {
+  margin-bottom: 0;
+}
+
+.poem-line {
+  margin: 0 0 6px 0;
+  padding: 0;
+  min-height: 1.7em;
+  word-break: break-word;
+}
+
+.poem-line:first-child {
+  font-weight: 700;
+  font-size: 1.35rem;
+  color: #ffe082;
+  text-shadow: 0 2px 8px #0008, 0 1px 0 #fff4;
+}
+
+.typing-cursor {
+  display: inline-block;
+  width: 2px;
+  height: 1em;
+  background-color: #ffe082;
+  margin-left: 2px;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.poem-word {
+  transition: color 0.2s, text-shadow 0.2s;
+}
+.poem-word:hover {
+  color: #ffe082;
+  text-shadow: 0 2px 8px #ffe08299, 0 1px 0 #fff4;
+} 

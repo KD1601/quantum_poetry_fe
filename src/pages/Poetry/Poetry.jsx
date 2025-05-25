@@ -37,9 +37,7 @@ const Poetry = () => {
       />
       <div style={{ position: 'relative', zIndex: 1 }}>
         <WordSphere onWordSelect={setSelectedWord} word={wordFromState} selectedWord={selectedWord} />
-        {/* {selectedWord && (
-          <button onClick={() => setSelectedWord(null)}>Quay lại</button>
-        )} */}
+        <PoemGenerator word={selectedWord} language={language} />
       </div>
     </div>
   )
